@@ -16,3 +16,19 @@ Add css for drop-drop
   border-style: dashed;
 }
 ```
+
+
+Add event handler for drag
+```
+  fill.addEventListener("dragstart", dragStart);
+  fill.addEventListener("dragend", dragEnd);
+```
+
+
+Add event handler for drop
+```
+  empty.addEventListener("dragover", dragOver);
+  empty.addEventListener("dragenter", dragEnter);
+  empty.addEventListener("dragleave", dragLeave);
+  empty.addEventListener("drop", dragDrop);
+```
